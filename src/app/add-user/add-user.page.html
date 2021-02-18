@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ajouter utilisateur</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form id="add-user-form">
+    <ion-list>
+      <ion-list-header>Veuillez remplir les champs :</ion-list-header>
+      <ion-item>
+        <ion-label>Nom :</ion-label>
+        <ion-input id="add-user-name" name="name" type="text" [(ngModel)]="userName"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Travail :</ion-label>
+        <ion-input id="add-user-job" name="job" type="text" [(ngModel)]="job"></ion-input>
+      </ion-item>
+    </ion-list>
+  </form>
+  <ion-button (click)="addUser()">Ajouter</ion-button>
+</ion-content>

@@ -1,0 +1,12 @@
+<ion-list-header>Users list</ion-list-header>
+<ion-list *ngFor="let user of usersList">
+  <ion-card (click)="selectedUser.emit(user.id)">
+    <ion-header>
+      <ion-card-title>{{user.first_name}} {{user.last_name}}</ion-card-title>
+    </ion-header>
+  
+    <ion-card-content>
+      <img [src]="user.avatar">
+    </ion-card-content>
+  </ion-card>
+</ion-list>

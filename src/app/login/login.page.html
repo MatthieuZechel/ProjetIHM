@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-title>Connexion</ion-card-title>
+    <ion-card-content>
+      <form id="login-form">
+        <ion-list>
+          <ion-item>
+            <ion-label>Addresse mail : </ion-label>
+            <ion-input id="login-email" name="email" type="email" [(ngModel)]="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Mot de passe : </ion-label>
+            <ion-input id="login-password" name="password" type="password" [(ngModel)]="password"></ion-input>
+          </ion-item>
+        </ion-list>
+      </form>
+      <ion-button (click)="login()">Se connecter
+        <ion-icon slot="end" name="log-in-outline"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
